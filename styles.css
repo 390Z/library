@@ -1,0 +1,107 @@
+html{
+    font-family: Roboto;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    grid-column-start: 2;
+}
+
+.form-btn {
+    text-align: right;
+}
+
+button#form-btn {
+    font-size: 28px;
+    font-family: Roboto;
+    width: 40px;
+    height: 40px;
+    color: #999;
+    border: 2px solid #999;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button#form-btn:active {
+    color: #111;
+    border-color: #111;
+}
+
+button#form-btn:focus {
+    outline: none;
+}
+
+.nb-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+    background-color: #e6e6e6;
+    padding: 8px 0;
+    border-radius: 2px;
+}
+
+input.nb-field {
+    width: 80%;
+    border: none;
+    border-radius: 2px;
+    height: 20px;
+    padding: 6px 10px;
+    font-size: 16px;
+}
+
+.nb-item {
+    padding: 10px 0;
+    margin: auto 0;
+}
+
+input#add-book {
+    font-family: Roboto;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    padding: 6px 8px;
+    background-color: #555;
+    color: #fff;
+}
+
+.table-header, .table-contents {
+    display: grid;
+    grid-template-columns: minmax(50px, 70px) 3fr 2fr 1fr 1.5fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.table-header {
+    font-weight: 600;
+}
+
+.header, span {
+    text-align: center;
+    padding: 8px 2px;
+}
+
+.remove-btn {
+    width: 20px;
+    height: 20px;
+    font-family: Roboto;
+    font-size: 15px;
+    margin: auto auto;
+    border: none;
+}
+
+.form-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}

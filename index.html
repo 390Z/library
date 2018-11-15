@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <div class="top">
+        <div class="title">My Library</div>
+        <div class="form-btn"><button id="form-btn">+</button></div>
+    </div>
+    <div class="form-container">
+        <form class="nb-form">
+            <div class="nb-item">
+                <input id="nb-title" class="nb-field" type="text" placeholder="Title" required>
+            </div>
+            <div class="nb-item">
+                <input id="nb-author" class="nb-field" type="text" placeholder="Author" required>
+            </div>
+            <div class="nb-item">
+                <input id="nb-pages" class="nb-field" type="number" placeholder="Pages" required>
+            </div>
+            <div class="nb-item">
+                <input type="radio" name="nb-read" value="Read" checked> Read
+            </div>
+            <div class="nb-item">
+                <input type="radio" name="nb-read" value="Not Read"> Not Read
+            </div>
+            <div class="nb-item">
+                <input id="add-book" type="button" value="Add To Library">
+            </div>
+        </form>
+    </div>
+ 
+    <div class='table-header'>
+        <span>#</span>
+        <span>Title</span>
+        <span>Author</span>
+        <span>Pages</span>
+        <span>Read</span>
+        <span>Remove</span>
+    </div>
+    <div class="table-contents"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
