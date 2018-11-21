@@ -20,7 +20,7 @@ function addBookToLibrary() {
         if (opt.checked) {
             nbRead = opt.value;
         }
-    })
+    });
 
     const newBook = new Book(nbTitle, nbAuthor, nbPages, nbRead);
     myLibrary.push(newBook);
@@ -74,12 +74,12 @@ document.addEventListener('click', function(e) {
         clearTable();
         render(myLibrary);
     }
-})
+});
 
 document.onload = render(myLibrary);
 
 //form show/hide script
-const formBtn = document.querySelector('.form-btn')
+const formBtn = document.querySelector('.form-btn');
 formBtn.addEventListener('click', function() {
     this.classList.toggle('active');
     const formContainer = document.querySelector('.form-container');

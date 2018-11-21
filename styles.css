@@ -15,12 +15,12 @@ html{
     grid-column-start: 2;
 }
 
-.form-btn {
+.form-btn-div {
     text-align: right;
 }
 
-button#form-btn {
-    font-size: 28px;
+.form-btn {
+    font-size: 26px;
     font-family: Roboto;
     width: 40px;
     height: 40px;
@@ -29,14 +29,21 @@ button#form-btn {
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: 0.2s ease-in-out;
 }
 
-button#form-btn:active {
-    color: #111;
-    border-color: #111;
+.active {
+    color: #fff;
+    background-color: #555;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
-button#form-btn:focus {
+.form-btn:focus {
     outline: none;
 }
 
